@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadow Movie Club</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <h1>Shadow Movie Club</h1>
+        <button id="nav-btn">
+          <a href="nav-btn.html">login</a>
+        </button>
+      </div>
+
+      <!--heading-->
+      <div class="heading">
+        <ul class="heading-menu">
+          <li><a>Trailers</a></li>
+          <li><a>More to Watch</a></li>
+          <li><a>plans</a></li>
+        </ul>
+      </div>
+
+      <!--video-->
+
+      <div class="video-container">
+        <!--   <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/1I15ttCedfY?si=I1I_3aPqh0T1Z1Qs"
+          title="YouTube video player"
+          frameborder="0"
+          allow=" autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe> -->
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/1I15ttCedfY?autoplay=1&mute=1&rel=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+
+        <div class="overlay">
+          <h1>THE APP</h1>
+          <input type="email" placeholder="Email address" />
+          <button>Join now</button>
+          <p>Endless entertainment starting at ₹149</p>
+        </div>
+      </div>
+
+      <!--The app-->
+      <div class="main-app">
+        <div class="app">
+          <h2>The App</h2>
+          <ul>
+            <li style="list-style: none">2019</li>
+            <li>A</li>
+            <li>Drama</li>
+          </ul>
+          <div class="app-content">
+            <div>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              doloremque maxime doloribus reprehenderit laborum, dolores
+              necessitatibus sapiente, dolore debitis quasi quaerat suscipit?
+              Voluptates, earum quibusdam nulla consequuntur nihil ratione
+              culpa.
+            </div>
+            <div>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+              harum! Quod quos sapiente debitis, odio unde id et dicta fugit
+              quaerat error quisquam qui neque enim inventore saepe veritatis
+              voluptatem.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--img-->
+
+      <div class="img-1">
+        <h2>Trailers</h2>
+        <img src="images/movie-img-1.PNG" alt="trailer" />
+        <h3 style="color: gray">TRAILER</h3>
+        <h4>The App (trailer)</h4>
+      </div>
+
+      <!--more details-->
+
+      <div style="margin-top: 40px; margin-bottom: 10px; color: white">
+        <h1>More Details</h1>
+      </div>
+
+      <div class="more">
+        <div class="more-1">
+          <h3>Watch offline</h3>
+          <p>Available to download</p>
+          <h3>Generes</h3>
+          <p>Sci-Fi Movies,italian,and Drama Movies</p>
+          <h3>This Show is...</h3>
+          <p>Cenebral,Understated,Sci-Fi Drama,italian,and Sci-fi Movies</p>
+        </div>
+
+        <div class="more-2">
+          <h3>Audio</h3>
+          <p>English,italian-audio Description,and italian[original]</p>
+          <h3>subtitles</h3>
+          <p>English,italian</p>
+        </div>
+
+        <div class="more-3">
+          <h3>Cast</h3>
+          <p>
+            Vincenzo Crea,Jessica Crassy,Greta Scarano,Maya Sansa,Abel
+            Ferrara,and Anita Kravos
+          </p>
+        </div>
+      </div>
+
+      <!--Also like-->
+      <div>
+        <div style="color: white">
+          <h1>You Might Also Like</h1>
+        </div>
+        <div class="img-container">
+          <button class="scroll-btn left" onclick="scrollImages(-300)">
+            &#8592;
+          </button>
+
+          <div class="image-track" id="imageTrack">
+            <img src="images/movie-img-0.PNG" alt="" />
+            <img src="images/movie-img-2.PNG" alt="" />
+            <img src="images/movie-img-3.PNG" alt="" />
+            <img src="images/movie-img-4.PNG" alt="" />
+            <img src="images/movie-img-5.PNG" alt="" />
+            <img src="images/movie-img-6.PNG" alt="" />
+            <img src="images/movie-img-7.PNG" alt="" />
+            <img src="images/movie-img-8.PNG" alt="" />
+            <img src="images/movie-img-9.PNG" alt="" />
+          </div>
+          <button class="scroll-btn right" onclick="scrollImages(300)">
+            &#8594;
+          </button>
+        </div>
+      </div>
+
+      <!--trend-->
+
+      <div style="color: white; margin-top: 20px; margin-bottom: 20px">
+        <h1>Trending Now</h1>
+      </div>
+      <div class="img-container-1">
+        <button class="scroll-btn left" onclick="scrollImage(-300)">
+          &#8592;
+        </button>
+
+        <div class="image-track-1" id="imageTrack-1">
+          <img src="image-1/trend-movie-1.PNG" alt="" />
+          <img src="image-1/trend-movie-2.PNG" alt="" />
+          <img src="image-1/trend-movie-3.PNG" alt="" />
+          <img src="image-1/trend-movie-4.PNG" alt="" />
+          <img src="image-1/trend-movie-5.PNG" alt="" />
+          <img src="image-1/trend-movie-6.PNG" alt="" />
+          <img src="image-1/trend-movie-7.PNG" alt="" />
+          <img src="image-1/trend-movie-8.PNG" alt="" />
+          <img src="image-1/trend-movie-9.PNG" alt="" />
+          <img src="image-1/trend-movie-10.PNG" alt="" />
+        </div>
+        <button class="scroll-btn right" onclick="scrollImage(300)">
+          &#8594;
+        </button>
+      </div>
+
+      <!--payment-->
+
+      <div style="color: white; margin-bottom: 20px">
+        <h1>All plan suit your need</h1>
+      </div>
+      <div class="payment-box">
+        <div class="box-1">
+          <h2>Mobile</h2>
+          <h4>480p</h4>
+          <ul class="box-1-bullets">
+            <li>Fair video quality</li>
+            <li>for your phone or tablet</li>
+          </ul>
+          <h3>$149/mo</h3>
+        </div>
+
+        <div class="box-1">
+          <h2>Basic</h2>
+          <h4>720p</h4>
+          <ul class="box-1-bullets">
+            <li>Good quality video</li>
+            <li>for your phone,tablet,laptop and TV</li>
+          </ul>
+          <h3>$199/mo</h3>
+        </div>
+
+        <div class="box-1">
+          <h2>Standard</h2>
+          <h4>1080p</h4>
+          <ul class="box-1-bullets">
+            <li>Good video quality</li>
+            <li>for your phone ,tablet,laptop and TV</li>
+          </ul>
+          <h3>$499/mo</h3>
+        </div>
+
+        <div class="box-1">
+          <h2>Premium</h2>
+          <h4>4K + HDR</h4>
+          <ul class="box-1-bullets">
+            <li>Best video quality</li>
+            <li>immersive sound (saptial audio)</li>
+            <li>For your phone,tablet,laptop and TV</li>
+          </ul>
+          <h3>$649/mo</h3>
+        </div>
+      </div>
+      <!--banner-->
+
+      <div class="banner">
+        <img src="images/cinema-background-concept.jpg" alt="" />
+
+        <div class="banner-text">
+          <div>
+            <p>Discover your next favourites,plus new releases every week</p>
+          </div>
+          <div>
+            <button>More About Shadow Movie Club</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="join">
+        <button>Join Now</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

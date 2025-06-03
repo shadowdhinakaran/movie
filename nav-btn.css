@@ -1,0 +1,243 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.head{
+    color: white;
+    position: fixed;
+    top: 10px;
+    left: 30px;
+}
+.nav-sign-in{
+    border: 1px solid black;
+    background-color: #2e2e2e;
+    color: white;
+    padding: 50px;
+    width: 30%;
+    box-sizing: border-box;
+}
+.name{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.password{
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.btn-sign{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+}
+h3{
+    text-align: center;
+}
+.btn-code{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: gray;
+    color: white;
+    border-radius: 15px;
+}
+.forgot{
+    text-align: center;
+}
+.forgot a{
+    color: white;
+}
+#check{
+    margin-left: 0;
+}
+@media screen and (max-width: 768px) {
+  .nav-sign-in {
+    width: 100%;
+    padding: 30px;
+    height: 100%;
+  }
+
+  .head {
+    font-size: 18px;
+    top: 5px;
+    left: 10px;
+  }
+
+  .btn-sign,
+  .btn-code,
+  .name,
+  .password {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  h3, h4, p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-sign-in {
+    padding: 20px;
+    height: 100%;
+  }
+
+  .head {
+    font-size: 16px;
+  }
+
+  .btn-sign,
+  .btn-code {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .name,
+  .password {
+    font-size: 14px;
+  }
+}
+ */
+ /* Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.head {
+  color: white;
+  position: fixed;
+  top: 10px;
+  left: 30px;
+  font-size: 24px;
+}
+
+/* Container */
+.nav-sign-in {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 50px;
+  width: 30%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 60px;
+}
+
+.name, .password, .btn-sign, .btn-code, #code-input {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.btn-sign {
+  background-color: red;
+  color: white;
+  border-radius: 15px;
+}
+
+.btn-code {
+  background-color: gray;
+  color: white;
+  border-radius: 15px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.forgot {
+  text-align: center;
+}
+
+.forgot a {
+  color: white;
+  text-decoration: underline;
+}
+
+#remember {
+  margin-top: 20px;
+}
+
+h4, p {
+  font-size: 14px;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav-sign-in {
+    width: 80%;
+    padding: 30px;
+  }
+
+  .head {
+    font-size: 20px;
+    left: 20px;
+  }
+
+  h4, p, .forgot, h3 {
+    font-size: 14px;
+  }
+
+  .btn-sign, .btn-code, .name, .password {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-sign-in {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .head {
+    font-size: 18px;
+    left: 15px;
+    top: 5px;
+  }
+
+  .btn-sign, .btn-code {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .name, .password {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h3, h4, p {
+    font-size: 13px;
+  }
+}

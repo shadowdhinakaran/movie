@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <link rel="stylesheet" href="nav-btn.css">
+</head>
+<body>
+    <h1 class="head">Shadow Movie Club</h1>
+    <div class="nav-sign-in">
+        <h1>Sign In</h1>
+        <form id="sign-in-form"  onsubmit="return formValidation()" >
+            <input id="email" class="name" type="text" placeholder="Email or Mobile Number">
+            <input id="password" class="password" type="password" placeholder="password">
+            <button class="btn-sign">Sign In</button>
+            <h3>OR</h3>
+            <input class="btn-code" id="code-input" type="text" placeholder="Enter Sign-In Code" style="display: none;">
+            <p class="forgot"><a href="#">forget password?</a></p>
+            <input type="checkbox" id="remember" checked>
+            <label for="remember">Remember Me</label>
+            <h4>New to NetFlix?<a href="#">Sign up now</a></h4>
+            <p>This page is prodected bu Google reCAPTCHA to ensure you aren't a bot</p>
+            <p><a href="#">learn more</a></p>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

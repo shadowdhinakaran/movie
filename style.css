@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sriracha&family=Tagesschrift&display=swap');
+
+*{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+    background-color:#0A0A0A;
+    overflow-x: hidden; 
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.nav h1{
+  color: white;
+}
+#nav-btn{
+   border: none;
+   padding: 10px 20px;
+   border-radius: 10px;
+   margin-right:5px ;
+}
+#nav-btn a{
+    text-decoration: none;
+    color: aqua;
+    font-weight: bold;
+}
+/* heading*/
+.heading{
+    background-color: #0f0f0f;
+    padding: 12px 25px;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    width: fit-content;
+    position: sticky;
+    top: 30px;
+    z-index: 10;
+    color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.heading-menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap:30px;
+    justify-content: center;
+}
+.heading-menu li a{
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 12px;
+    transition: color 0.3s ease background-color 0.3s ease;
+}
+.heading-menu li a:hover{
+    color: white;
+    cursor: pointer;
+}
+/*video*/
+
+
+.video-container {
+      position: relative;
+      width: 90%;
+      height: 100vh;
+      overflow: hidden;
+      border-radius: 10px;   
+      margin: 0 auto;
+      margin-top: 20px;   
+    }
+
+    video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 0.1) 100%);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 60px;
+    }
+
+    .overlay h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .overlay input {
+      padding: 10px;
+      width: 300px;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+      border: none;
+    }
+
+    .overlay button {
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 300px;
+    }
+
+    .overlay p {
+      margin-top: 1rem;
+    }
+
+/*app*/
+.main-app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app{
+    border: 1px solid black;
+    margin-top: 30px;
+    width: 70%;
+   background-color: gray;
+   color: white;
+   padding: 20px;
+  border-radius: 20px;
+  box-shadow:  0 4px 10px rgba(0,0,0,0.5);
+}
+
+.app ul{
+    display: flex;
+    gap: 40px;
+}
+.app-content{
+    display: flex;
+    text-align: justify;
+    gap:20px;
+}
+.img-1{
+    margin-left: 10px;
+}
+.img-1 h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.img-1 img{
+    object-fit: cover;
+    border-radius: 10px;
+}
+/*More DeTails*/
+.more-1{
+    width: 30%;
+    padding: 10px;
+    background-color: gray;
+    color: gainsboro;
+    border-radius: 10px;
+
+}
+.more-2{
+    width: 30%;
+    padding: 10px;
+    background-color: gray;
+    color: gainsboro;
+    border-radius: 10px;
+}
+.more-3{
+    width: 30%;
+    padding: 10px;
+    background-color: gray;
+    color: gainsboro;
+    border-radius: 10px;
+}
+.more{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+/*img-scroll*/
+.img-container {
+  position: relative;
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  overflow: hidden; /* hide scrollbars */
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.image-track {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll; /* enable horizontal scroll */
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+}
+
+.image-track::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.image-track img {
+  flex-shrink: 0;
+  width: 180px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.image-track img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.8);
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 60px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease;
+  user-select: none;
+  z-index: 10;
+}
+
+.scroll-btn:hover {
+  background: #ddd;
+}
+
+.scroll-btn.left {
+  left: 10px;
+}
+
+.scroll-btn.right {
+  right: 10px;
+}
+
+/* trend*/
+.img-container-1 {
+  position: relative;
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  overflow: hidden; /* hide scrollbars */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.image-track-1 {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll; /* enable horizontal scroll */
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+}
+
+.image-track-1::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.image-track-1 img {
+  flex-shrink: 0;
+  width: 180px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.image-track-1 img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.8);
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 60px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease;
+  user-select: none;
+  z-index: 10;
+}
+
+.scroll-btn:hover {
+  background: #ddd;
+}
+
+.scroll-btn.left {
+  left: 10px;
+}
+
+.scroll-btn.right {
+  right: 10px;
+}
+/*payment*/
+.payment-box{
+   display:flex;
+   justify-content: center;
+   
+}
+.box-1{
+  background-color: #333;
+  color: white;
+  max-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+.box-1:hover{
+  background-color: #474747;
+}
+.box-1 h2{
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+.box-1 h4{
+   font-size: 1rem;
+  margin-bottom: 8px;
+  margin-left: 15px;
+}
+.box-1 h3{
+  margin-top: 30px;
+}
+.box-1-bullets{
+  list-style: none;
+}
+.box-1-bullets li::before{
+  content: '✔';
+  margin-right: 8px;
+}
+/*banner*/
+.banner{
+     text-align: center;
+     margin-top: 40px;
+     position: relative;
+}
+.banner img{
+  width: 80%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+.banner-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.banner-text button{
+  background-color: #474747;
+  padding: 10px 20px ;
+  border-radius: 40px;
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+.banner-text button:hover{
+  background-color: #5e5d5d;
+}
+/* join button*/
+.join {
+  text-align: center; 
+  margin-top: 20px;
+   position: sticky;
+  bottom: 10px;
+  
+}
+.join button{
+  margin: 0 auto;
+  background-color: red;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+ 
+ 
+}
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+
+  /* Nav adjustments */
+  .nav {
+    flex-direction: row; /* Keep title and button in same row */
+    justify-content: space-between;
+  }
+
+  #nav-btn {
+    padding: 8px 16px;
+  }
+
+  /* Heading */
+  .heading {
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: 90%;
+    margin-top: 15px;
+  }
+
+  .heading-menu {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .heading-menu li a {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  /* Video Overlay */
+  .video-container {
+    width: 100%;
+    height: 50vh; /* reduce height for smaller screens */
+  }
+
+  .overlay {
+    padding-left: 20px;
+  }
+
+  .overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .overlay input, .overlay button {
+    width: 90%;
+  }
+
+  /* Main App */
+  .app {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .app ul {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .app-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .img-1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* More Details */
+  .more {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .more-1, .more-2, .more-3 {
+    width: 100%;
+  }
+
+  /* Image Scroll Containers */
+  .img-container, .img-container-1 {
+    max-width: 100%;
+  }
+
+  .image-track, .image-track-1 {
+    gap: 8px;
+  }
+
+  .image-track img, .image-track-1 img {
+    width: 140px;
+    height: 220px;
+  }
+
+  /* Payment boxes */
+  .payment-box {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .box-1 {
+    max-width: 100%;
+    margin: 0 auto 20px;
+  }
+
+  /* Banner */
+  .banner img {
+    width: 100%;
+    height: 80px;
+  }
+
+  .banner-text {
+    width: 90%;
+    font-size: 1.2rem;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .banner-text button {
+    width: 100%;
+  }
+
+  /* Join Button */
+  .join button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    width: 90%;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Smaller devices adjustments */
+
+  .nav h1 {
+    font-size: 18px;
+  }
+
+  #nav-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .overlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .overlay input, .overlay button {
+    width: 100%;
+  }
+
+  .app {
+    padding: 10px;
+  }
+
+  .image-track img, .image-track-1 img {
+    width: 120px;
+    height: 180px;
+  }
+
+  .banner-text {
+    font-size: 1rem;
+  }
+
+  .join button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
